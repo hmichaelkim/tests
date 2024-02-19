@@ -5,7 +5,7 @@ test('Search for "Mango vs Leffen"', async ({ page }) => {
   await page.waitForSelector('input[name="search_query"]');
   await page.click('input[name="search_query"]');
   await page.fill('input[name="search_query"]', 'Mango vs Leffen');
-  await page.press('input[name="search_query"]', 'Enter'); 
+  await page.press('input[id="search"]', 'Enter');
   const searchInputValue = await page.inputValue('input[id="search"]');
   const searchResults = await page.innerText('.style-scope ytd-video-renderer');
   // Convert to lowercase
