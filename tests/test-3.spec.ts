@@ -1,3 +1,6 @@
+// This is an early version of test 2, which fails
+// This test fails because it doesn't take into consideration alternative spellings of the name "mango"
+
 import { test, expect } from '@playwright/test';
 
 test('Search for "Mango vs Zain 2"', async ({ page }) => {
