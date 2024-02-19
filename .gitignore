@@ -4,3 +4,4 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 tests/test-4.spec.ts
+tests/test-5.spec.ts
