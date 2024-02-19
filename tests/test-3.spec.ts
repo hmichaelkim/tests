@@ -7,8 +7,9 @@ test('Search for "Mango vs Zain 2"', async ({ page }) => {
   await page.fill('input[id="search"]', 'Mango vs Zain');
   await page.press('input[id="search"]', 'Enter');
   const searchInputValue = await page.inputValue('input[id="search"]');
-  // Assert that the search results contain "mango" and "zain"
   const searchResults = await page.innerText('.style-scope ytd-video-renderer');
+  // Convert to lowercase 
   const words = searchResults.toLowerCase().split(/\s+/);
+  // Assert that the search results contain "mango" and "zain"
   expect(words.includes('mango') && words.includes('zain')).toBeTruthy();
 });
