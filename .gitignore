@@ -5,3 +5,4 @@ node_modules/
 /playwright/.cache/
 /tests/test-4.spec.ts
 /tests/test-5.spec.ts
+/tests-examples
