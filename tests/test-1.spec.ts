@@ -1,3 +1,5 @@
+// This is an example test in which an input is searched into Youtube.com, then the search is validated.
+
 import { test, expect } from '@playwright/test';
 
 test('Search for "Mango vs Leffen"', async ({ page }) => {
